@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(30, 30, 30);
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100vh;
+  text-align: center;
+}
+.container section:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.container section:first-child h1 {
+  margin-bottom: 60px;
+}
+
+.container section:first-child div p:first-child {
+  font-size: 14px;
+  font-weight: 500;
+}
+.newAccount {
+  color: #c0c0c0;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.newAccount a {
+  font-weight: 600;
+}
+h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+form div {
+  border: 1.5px solid #c0c0c0;
+  border-radius: 50px;
+  margin: 16px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+form div img {
+  width: 16px;
+  cursor: pointer;
+}
+input {
+  border: none;
+  padding: 14px 20px;
+  outline: none;
+  width: 100%;
+}
+input::placeholder {
+  font-size: 12px;
+  color: #afafaf;
+}
+
+section .checkbox {
+  font-size: 10px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  margin-top: -6px;
+}
+.checkbox div {
+  display: flex;
+  align-items: center;
+}
+button {
+  width: 100%;
+  background-color: #feb503;
+  padding: 14px;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  color: aliceblue;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #fe6123;
+}
+
+button:active {
+  background-color: #b64540;
+}
+.background {
+  background-image: url("/styles/img/background02.png");
+  width: 600px;
+  /* height: 90vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+/* toggle-pill-color */
+.toggle-pill-color input[type="checkbox"] {
+  display: none;
+}
+.toggle-pill-color input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  width: 3em;
+  height: 1.6em;
+  border-radius: 1em;
+  margin-right: 6px;
+  background: #dcdcdc;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+}
+.toggle-pill-color input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 1em;
+  background: #fff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0.2em;
+  top: 0.2em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.toggle-pill-color input[type="checkbox"]:checked + label {
+  background: #47cf73;
+}
+.toggle-pill-color input[type="checkbox"]:checked + label:before {
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+  left: 1.6em;
+}
+/* toggle-pill-color end */
+
+/* MEDIA QUERY */
+@media (max-width: 1000px) {
+  .background {
+    /* background: none; */
+    display: none;
+  }
+  .container {
+    background-image: url("/styles/img/background02.png");
+    /* width: 600px; */
+    /* height: 90vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    padding: 0;
+    height: 100%;
+  }
+  body {
+    padding: 20px;
+    height: 100vh;
+  }
+  .container section:first-child {
+    background-color: white;
+    padding: 40px 80px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 520px) {
+  body {
+    padding: 0;
+    height: 100vh;
+  }
+  .container {
+    border-radius: 0;
+  }
+  .container section:first-child {
+    padding: 8% 16%;
+  }
+}

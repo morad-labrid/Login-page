@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="jquery-3.6.0.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="/styles/css/style.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <main class="container">
+    <!-- Left section -->
+    <section class="signin">
+      <h1>Welcome</h1>
+      <div>
+        <p>Please enter your details.</p>
+        <!-- Form -->
+        <form>
+          <div>
+            <input type="text" name="username" id="username" placeholder="username">
+            <img src="/styles/img/user.svg" alt="">
+          </div>
+          <div>
+            <input type="email" name="user_mail" id="user_mail" placeholder="Email">
+            <img src="/styles/img/mail.svg" alt="">
+          </div>
+          <div>
+            <input type="password" class="password" name="user_password" id="user_password" placeholder="Password">
+            <img class="showpassword" class="password" src="/styles/img/eye-off.svg" alt="">
+          </div>
+          <div>
+            <input class="cpassword" type="password" name="c_user_password" id="c_user_password" placeholder="Password">
+          </div>
+        </form>
+        <!-- Log in button -->
+        <button>Sign up</button>
+        <p class="newAccount">Already have an account? <a href="/index.html">Log in</a></p>
+      </div>
+    </section>
+    <!-- Right section -->
+    <section class="background">
+    </section>
+  </main>
+
+  <script src="/styles/js/myscript.js"></script>
+</body>
+
+</html>

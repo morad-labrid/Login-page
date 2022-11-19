@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="jquery-3.6.0.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="/styles/css/style.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <main class="container">
+    <!-- Left section -->
+    <section class="signin">
+      <h1>Welcome back</h1>
+      <div>
+        <p>Please enter your details.</p>
+        <!-- Form -->
+        <form>
+          <div>
+            <input type="email" name="user_mail" id="user_mail" placeholder="Email">
+            <img src="/styles/img/icons/mail.svg" alt="">
+          </div>
+          <div>
+            <input type="password" class="password" name="user_password" id="user_password" placeholder="Password">
+            <img class="showpassword" src="/styles/img/icons/eye-off.svg" alt="">
+          </div>
+        </form>
+        <!-- Checkbox & forgot password -->
+        <div class="checkbox">
+          <div class="toggle-pill-color">
+            <input type="checkbox" id="pill3" name="check">
+            <label for="pill3"></label>
+            <p>Remember me</p>
+          </div>
+          <a class="switch_to_forgot" href="/pages/recover-password.html">Forgot password?</a>
+        </div>
+        <!-- Log in button -->
+        <button>Log in</button>
+        <p class="newAccount">Don't have an account? <a href="/pages/signup.html" class="switch_to_signup">Sign up</a>
+        </p>
+      </div>
+    </section>
+    <!-- Right section -->
+    <section class="background">
+    </section>
+  </main>
+
+  <script src="/styles/js/myscript.js"></script>
+</body>
+
+</html>
