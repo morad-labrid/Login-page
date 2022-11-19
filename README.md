@@ -1,5 +1,4 @@
-<h1 align="center">Hi 👋</h1>
-<h3 align="center">Login page</h3>
+<h1 align="center">Login page 👌🏽</h1>
 <p align="center">A simple minimal login page with HTML5 and JavaScript 100% responsive</p>
 
 <p>Dimension: > 1000px</p>
